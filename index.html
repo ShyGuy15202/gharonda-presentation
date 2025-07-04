@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAAC Rajouri</title>
+    <link rel="shortcut icon" href="https://content.jdmagicbox.com/comp/meerut/p6/9999px121.x121.240304142921.n9p6/catalogue/u5wzx84v3lxfypa-43jxawn4ir.jpg" type="image/x-icon">
+       
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/poppins');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+@font-face {
+  font-family:headings;
+  src: url(ASSETS/font/Salita.ttf);
+}
+:root{--poppins:'Poppins', sans-serif;
+--green: #09201f;
+--baize:#f6f2d9;
+
+}
+
+    body {background: var(--baize);
+      font-family: var(--poppins);
+      padding-top: 70px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #09201f;
+      color: #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      z-index: 999;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .brand .team {
+      font-size: 20px;
+      font-weight: bold;
+ color: var(--baize);
+    }
+
+    .brand .center {
+      font-size: 13px;
+      opacity: 0.8;
+ color: var(--baize);
+    }
+
+    .nav-links {
+      display: flex;
+            background-color: var(--green);
+      gap: 25px;
+      align-items: center;
+    }
+
+    .nav-links a,
+    .dropdown-toggle {
+      text-decoration: none;
+      color: var(--baize);
+      font-size: 15px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .dropdown-toggle:hover {
+      color: white;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+ background:var(--green);
+      top: 30px;
+      left: 0;
+      min-width: 160px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+      z-index: 1000;
+      flex-direction: column;
+      border-radius: 12px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .dropdown.open .dropdown-content {
+      display: flex;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger div {background:var(--baize);
+      width: 25px;
+      height: 3px;
+
+    }
+
+    /* ui/ux */
+    .uiux-section {
+      text-align: center;
+      padding: 50px 20px;
+      color: black;
+    }
+    .uiux-section h2 {
+      margin: 10px 0 30px;
+    }
+    .app-mockup {
+      width: 90%;
+      max-width: 1200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    .visit-btn2 {
+      display: inline-block;
+      background: transparent;
+      color: black;
+      border: 1.5px solid black;
+      padding: 12px 24px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    .visit-btn2:hover {
+      background: var(--green);
+      color: var(--baize);
+      border: 1.5px solid var(--baize);
+
+    }
+
+    /* sec-1 */
+    .team-section {
+      text-align: center;
+      padding: 50px 20px;
+      padding-top: 20px;
+
+    }
+
+    .team-section h2 {
+      font-size: 2.2em;
+    }
+
+    .team-section p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 1em;
+      color: #555;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 20px;
+      padding: 0 40px;
+    }
+
+    .team-member {
+      background: var(--green);
+      padding: 10px;
+      border-radius: 12px;
+       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+      transition: transform 0.3s ease-in-out;
+      border: 1px solid rgba(0, 0, 0, 0.09);
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+      transform: scale(1.06);
+      cursor: pointer;
+    }
+
+    .team-member img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .team-member h4 {
+      font-size: 1.2em;
+    color: var(--baize);
+      margin-bottom: 10px;
+    }
+
+    .team-member p {
+      margin: 5px 0 0;
+      font-size: 0.95em;
+      color: #a3a3a3;
+    }
+
+    /* branding */
+    .branding-section {
+      width: 100%;
+      padding: 60px 0;
+
+      text-align: center;
+      color: black;
+    }
+
+    .branding-section img {
+      width: 100%;
+      height: auto;
+      max-width: 1200px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+    }
+
+    .branding-section img:hover {
+      transform: scale(1.01);
+    }
+
+    /* logo-animation */
+    .logo-animation-section {
+
+      padding: 60px 20px;
+      text-align: center;
+      color: black;
+    }
+
+    .logo-animation-section video {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+      cursor: pointer;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 1200px;
+      margin: 20px auto;
+      border-radius: 12px;
+           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* flyer */
+    .advertising-section {
+      padding: 60px 20px;
+      text-align: center;
+
+      color: black;
+    }
+
+    .advertising-section p {
+      font-size: 1.2em;
+      color: white;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .flyer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .flyer-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .flyer-item img:hover {
+      transform: scale(1.03);
+    }
+
+    /* brochure */
+
+    .brochure-section {
+      padding: 60px 20px;
+      text-align: center;
+      color: black;
+    }
+
+    .brochure-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .brochure-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+    }
+
+    .brochure-item img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Lightbox styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+    }
+
+    .lightbox .close-btn {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      font-size: 2em;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* smp */
+    .social-media-section {
+      padding: 60px 20px;
+      text-align: center;
+      color: black;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      justify-content: center;
+      gap: 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .social-item img {
+
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .social-item img:hover {
+      transform: scale(1.03);
+    }
+
+    /* stationery */
+    .stationery-section {
+      width: 100%;
+      padding: 60px 20px;
+
+      color: black;
+      text-align: center;
+    }
+
+    .stationery-section img {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+      display: block;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .stationery-section img:hover {
+      transform: scale(1.02);
+    }
+
+    /* ppt */
+
+    .sales-pitch-section {
+      padding: 60px 20px;
+
+      text-align: center;
+      color: black;
+    }
+
+    .pdf-container {
+      position: relative;
+      width: 90%;
+      padding-bottom: 56.25%;
+      height: 700px;
+      margin: 0 auto;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+      border-radius: 10px;
+    }
+
+    .pdf-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .download-btn {
+      margin-top: 20px;
+    }
+
+    .download-btn a {
+      padding: 10px 20px;
+
+      border: 1.5px solid black;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn a:hover {
+      background-color: var(--green);
+      color: var(--baize);
+    }
+
+    /* website */
+    .website-section {
+      text-align: center;
+      padding: 60px 20px;
+
+      color: black;
+    }
+
+    .website-preview img {
+      max-width: 90%;
+      width: 100%;
+      max-height: 1000px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .website-preview img:hover {
+      transform: scale(1.02);
+    }
+
+    .visit-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+
+      color: black;
+      border: 1.5px solid black;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .visit-btn:hover {
+      background-color: var(--green);
+      color: var(--baize);
+      border: 1.5px solid var(--baize);
+    }
+
+    /* footer */
+    #p-footer {
+      font-family: var(--poppins);
+      display: block;
+      font-size: 16px;
+      letter-spacing: 0.25px;
+      width: 100%;
+      color: white;
+      background-color: black;
+      background-size: cover;
+      text-align: center;
+      border-top: 1px solid rgb(255, 255, 255, 0.4);
+      margin: 0;
+      padding: 15px 0;
+    }
+
+    .bts p {
+      font-size: 17px;
+    }
+
+    .thinFont{font-weight: 500;}
+    /* back to top */
+
+    #backToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 99;
+      font-size: 20px;
+      border: none;
+      outline: none;
+      background-color: var(--green);
+      color: white;
+      cursor: pointer;
+      padding: 12px 16px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.549);
+      transition: 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    #backToTopBtn:hover {
+      background-color:var(--green);
+      transform: translateY(-5px);
+    }
+
+
+
+    /* Salita Text headings */
+
+    .salita{font-family: headings;
+    font-weight: normal;
+    font-size: 3rem;
+   }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 58px;
+        right: 0;
+        width: 100%;
+        padding: 20px 30px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+        padding-left: 15px;
+        text-align: center;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .bts p {
+        font-size: 12px;
+      }
+
+      .visit-btn2 {
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="brand">
+        <div class="team">Team Minion Mandali</div>
+        <div class="center">MAAC Rajouri</div>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#branding">Logo & Tagline</a>
+        <a href="#brand-check">Brand Overview</a>
+        <a href="#logo-animation">Logo Animation</a>
+
+        <div class="dropdown" onclick="toggleDropdown(event)">
+          <span class="dropdown-toggle">Advertising ▾</span>
+          <div class="dropdown-content">
+            <a href="#flyer">Flyer Design</a>
+            <a href="#brochure">Brochure Design</a>
+            <a href="#smp">Social Media Carosuel</a>
+          </div>
+        </div>
+
+        <a href="#stationery">Corporate Stationery</a>
+        <a href="#ppt">Sales Pitch</a>
+        <a href="#video">2D Video</a>
+        <a href="#uiux">UI/UX</a>
+        <a href="#website">Website</a>
+        <a href="#bts">BTS</a>
+      </div>
+    </nav>
+
+    <!--Content -->
+    <section style="padding: 20px">
+      <!-- sec-1 -->
+      <section class="team-section">
+        <h2 data-aos="zoom-fade-up">TEAM <br> MINION MANDALI</h2>
+
+        <p data-aos="zoom-fade-up">
+          We are a passionate team working across multiple aspects of branding
+          and multimedia design. Meet our creative professionals!
+        </p>
+
+        <div class="team-grid" data-aos="fade-up">
+          <div class="team-member">
+            <img src="ASSETS/images2/New folder/Group 1.png" alt="">
+            <h4>Sukanya Manchanda</h4>
+            <p>Mentor - MAAC Rajouri</p>
+            <br />
+          </div>
+          <div class="team-member">
+            <img src="ASSETS/images2/New folder/Vanshika.png" alt="Team Member 1" />
+            <h4>Vanshika Singhal</h4>
+            <p>Graphic Designer</p>
+            <br/>
+          </div>
+        
+          <div class="team-member">
+            <img src="ASSETS/images2/New folder/Muskan.png" alt="Team Member 3" />
+            <h4>Muskan Mishra</h4>
+            <p>Video Editor</p>
+            <br />
+          </div>
+          <div class="team-member">
+            <img src="ASSETS/images2/New folder/IMG_20240330_111319.png" alt="Team Member 5" />
+            <h4>Abhishek Mittal</h4>
+            <p>Web Designer</p>
+            <br />
+          </div>
+          <div class="team-member">
+          <img src="ASSETS/images2/New folder/vaishnavi.png" alt="Team Member 2" />
+          <h4>Vaishnavi Chavali</h4>
+          <p>Graphic Designer</p>
+          <br />
+          </div>
+          <div class="team-member">
+          <img src="ASSETS/images2/New folder/Suhani.png" alt="Team Member 2" />
+          <h4>Suhani Tanwar</h4>
+          <p>UI/UX Designer</p>
+          <br />
+          </div>
+       
+       
+        </div>
+      </section>
+
+      <!-- sec-1 ends here -->
+
+      <!-- brand check -->
+      <section
+        class="sales-pitch-section uiux-section"
+        id="brand-check"
+        data-aos="fade-up"
+      >
+        <h2 data-aos="fade-up" class="salita">Brand Overview</h2>
+        <br />
+
+        <div class="pdf-container">
+          <iframe
+            src="ASSETS/pdf/Logo Presentation Corrected.pdf"
+            type="application/pdf"
+          ></iframe>
+        </div>
+        <br />
+
+        <div class="download-btn">
+          <a href="ASSETS/pdf/Logo Presentation .pdf" download target="_blank"
+            >⬇ Download PDF</a
+          >
+        </div>
+      </section>
+
+      <!-- sec-3 logo animation -->
+      <section
+        class="logo-animation-section uiux-section"
+        id="logo-animation"
+        data-aos="fade-up"
+      >
+        <h2 class="salita">Logo Animation</h2>
+        <br />
+        <div class="video-container">
+   
+       <iframe src="https://www.youtube.com/embed/hpzNGeU8MCo?si=DhUpxTb4Xspgm5qP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <!-- flyer -->
+      <section class="advertising-section uiux-section" id="flyer">
+        <h3 class="thinFont">ADVERTISING MATERIAL</h3>
+        <h2 data-aos="fade-up" class="salita" style="line-height: 1;">Flyer Design</h2>
+        
+        <div class="flyer-grid">
+          <div class="flyer-item" data-aos="fade-up" data-aos-delay="10s">
+                  <h3 class="thinFont" style="margin-bottom: 30px;">Flyer Design 1 front</h3>
+            <img src="ASSETS/flyer/1.jpg"
+              alt="Flyer Design 1"
+              onclick="openLightbox(this.src)" style="margin-bottom: 30px;"/>
+              <h3 class="thinFont" style="margin-bottom: 30px;">Flyer Design 1 back</h3>
+            <img src="ASSETS/flyer/back side.jpg"
+              alt="Flyer Design 1"
+              onclick="openLightbox(this.src)"/>
+          </div>
+          <div class="flyer-item" data-aos="fade-up" data-aos-delay="10s">
+            <h3 class="thinFont" style="margin-bottom: 30px;">Flyer Design 2 front</h3>
+            <img src="ASSETS/flyer/second.jpg"
+              alt="Flyer Design 2"
+              onclick="openLightbox(this.src)"style="margin-bottom: 30px;"/>
+                <h3 class="thinFont" style="margin-bottom: 30px;">Flyer Design 2 back</h3>
+            <img src="ASSETS/flyer/back side 2.jpg"
+              alt="Flyer Design 2" style="margin-bottom: 30px;"
+              onclick="openLightbox(this.src)"/>
+          </div>
+        </div>
+            <h3 class="thinFont" style="margin-bottom: 30px;">MOCKUPS</h3>
+
+        <div class="flyer-grid">
+          <div class="flyer-item" data-aos="fade-up" data-aos-delay="10s">
+            <img src="ASSETS/flyer/mockup 1.jpg"
+              alt="Flyer Design 1"
+              onclick="openLightbox(this.src)"/>
+          </div>
+          <div class="flyer-item" data-aos="fade-up" data-aos-delay="10s">
+     
+            <img src="ASSETS/flyer/mockup 2.jpg"
+              alt="Flyer Design 2"
+              onclick="openLightbox(this.src)"/>
+          </div>
+        </div>
+      </section>
+
+      <!-- brochure -->
+      <section class="brochure-section uiux-section" id="brochure">
+        <h2 data-aos="fade-up" class="salita">Brochure Design</h2>
+        <br/>
+
+        <div class="brochure-grid">
+          <div class="brochure-item" data-aos="fade-up">
+            <img src="ASSETS/BROCHURE/Artboard 1.jpg"
+              alt="Brochure 1"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+          <div class="brochure-item" data-aos="fade-up">
+            <img src="ASSETS/BROCHURE/Artboard 2.jpg"
+              alt="Brochure 2"
+              onclick="openLightbox(this.src)"/>
+          </div>
+        </div>
+        <br>
+        
+            <h3 class="thinFont" style="margin-bottom: 30px;">MOCKUPS</h3>
+          <div class="brochure-grid">
+          <div class="brochure-item" data-aos="fade-up">
+            <img src="ASSETS/BROCHURE/mockup.jpg"
+              alt="Brochure 1"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+          <div class="brochure-item" data-aos="fade-up">
+            <img src="ASSETS/BROCHURE/MOCKUP 1.jpg"
+              alt="Brochure 2"
+              onclick="openLightbox(this.src)"/>
+          </div>
+        </div>
+      </section>
+
+      <!-- social media post -->
+      <section class="social-media-section uiux-section" id="smp">
+        <h2 data-aos="fade-up" class="salita">Social Media Carousel</h2>
+        <br />
+
+        <div class="social-grid">
+          <div class="social-item" data-aos="fade-up">
+            <img
+              src="ASSETS/socialmedia/first gen.png"
+              alt="Social Post 2"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+          <div class="social-item" data-aos="fade-up">
+            <img
+              src="ASSETS/socialmedia/middle gen.png"
+              alt="Social Post 3"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+          <div class="social-item" data-aos="fade-up">
+            <img
+              src="ASSETS/socialmedia/third gen.png"
+              alt="Social Post 4"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+          <div class="social-item" data-aos="fade-up">
+            <img
+              src="ASSETS/socialmedia/4th slide.png"
+              alt="Social Post 5"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+          <div class="social-item" data-aos="fade-up">
+            <img
+              src="ASSETS/socialmedia/5th slide.png"
+              alt="Social Post 2"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+        </div>
+            <h3 class="thinFont" style="margin-top: 30px; margin-bottom: 30px;">MOCKUPS</h3>
+            <div class="social-item" data-aos="fade-up">
+            <img
+              src="ASSETS/socialmedia/CI 1.png"
+              alt="Social Post 2"
+              onclick="openLightbox(this.src)"
+            />
+          </div>
+      </section>
+
+      <!-- stationery -->
+      <section
+        class="stationery-section uiux-section"
+        id="stationery"
+        data-aos="fade-up">
+        <h2 class="salita">Corporate Stationery</h2>
+        <br /><br />
+        <img
+          src="ASSETS/corporateStationery/corporatestationary.jpg"
+          alt="stationery"
+          onclick="openLightbox(this.src)"
+        />
+      </section>
+
+      <!-- ppt -->
+      <section
+        class="sales-pitch-section uiux-section"
+        id="ppt"
+        data-aos="fade-up"
+      >
+        <h2 class="salita">Sales Pitch Presentation</h2>
+        <br />
+
+        <div class="pdf-container">
+          <iframe
+            src="ASSETS/pdf/Sales Pitch pdf.pdf"
+            type="application/pdf"
+          ></iframe>
+        </div>
+        <br />
+
+        <div class="download-btn">
+          <a
+            href="ASSETS/pdf/Sales Pitch pdf.pdf"
+            download
+            target="_blank"
+            >⬇ Download PDF</a
+          >
+        </div>
+      </section>
+
+      <!-- 2d video -->
+      <section
+        class="logo-animation-section uiux-section"
+        id="video"
+        data-aos="fade-up"
+      >
+        <h2 class="salita">2D Explainer Video</h2>
+        <br />
+
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/fCputCouI6w?si=oOZ8QMDJ_R8GqdJ6"
+            frameborder="0"
+            allow="autoplay; encrypted-media; clipboard-write; fullscreen; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- ui/ux -->
+      <section class="uiux-section" id="uiux">
+        <h3 data-aos="fade-up" >UI-UX Design</h3>
+        <h2 data-aos="fade-up" class="salita">Mobile App Interface Design</h2>
+        <br>
+        <!-- App Mockup Image -->
+        <div class="ui-preview" data-aos="fade-up">
+          <img
+            src="ASSETS/UiUx/ui.jpg"
+            alt="Mobile App Design"
+            class="app-mockup"
+            onclick="openLightbox(this.src)"
+          />
+        </div>
+        <br /><br />
+        <!-- Prototype Button -->
+        <a
+          href="https://www.figma.com/design/HQ5v0pXoRQBF14gZLVfiqL/case-study-gharonda-greens?node-id=0-1&t=gzwKXjKm5eFrWRlX-1"
+          class="visit-btn2"
+          target="_blank"
+          >View Case Study</a>
+        <a
+          href="https://www.figma.com/design/oAufJz4na1GmQeSIa9MExM/gharonda-greens-application?node-id=0-1&t=3ZTwzm93pPjU3IxR-1"
+          class="visit-btn2"
+          target="_blank"
+          >View UI Design</a>
+        <a
+          href="https://www.figma.com/proto/oAufJz4na1GmQeSIa9MExM/gharonda-greens-application?node-id=317-465&t=3ZTwzm93pPjU3IxR-1"
+          class="visit-btn2"
+          target="_blank">Visit App</a
+        >
+      </section>
+
+      <!-- website -->
+      <section class="website-section uiux-section" id="website">
+        <h2 data-aos="fade-up" class="salita">Website Design</h2>
+        <br />
+
+        <div class="website-preview" data-aos="fade-up">
+          <img
+            src="ASSETS/website/website.png"
+            alt="Website Preview"
+            onclick="openLightbox(this.src)"
+          />
+        </div>
+        <br />
+
+        <a href="https://shyguy15202.github.io/gharonda/" target="_blank" class="visit-btn"
+          >Visit the Website</a
+        >
+      </section>
+
+      <!-- BTS-->
+      <section
+        class="logo-animation-section uiux-section bts"
+        id="bts"
+        data-aos="fade-up"
+      >
+        <h2 class="salita">Behind The Scenes</h2>
+        <p style="letter-spacing: 0.15px; color: #333">
+          Here's a peek into our fun-filled creative process. From brainstorimg
+          ideas to late-night edits - our journey was as exciting as the final
+          outcome.This BTS captures those real, raw, and memorable
+          memories that made our branding and multimedia story truly special.
+        </p>
+        <br /><br />
+        
+    <iframe src="https://www.youtube.com/embed/SvcInE7z21A?si=zDFTBqzMhGjuPntU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Expanded Flyer" />
+      </div>
+
+      <!-- back to top btn -->
+
+      <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </section>
+
+    <div style="font-weight: bold; letter-spacing: 0.15px" id="p-footer">
+      Team StarWins | Maac Rajouri
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <!-- hamburger -->
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+      }
+
+      function toggleDropdown(e) {
+        e.stopPropagation();
+        document.querySelectorAll(".dropdown").forEach((drop) => {
+          if (drop !== e.currentTarget) {
+            drop.classList.remove("open");
+          }
+        });
+        e.currentTarget.classList.toggle("open");
+      }
+
+      document.addEventListener("click", () => {
+        document.querySelectorAll(".dropdown").forEach((drop) => {
+          drop.classList.remove("open");
+        });
+      });
+    </script>
+
+    <!-- lightbox -->
+    <script>
+      function openLightbox(src) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightbox.style.display = "flex";
+        lightboxImg.src = src;
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+      }
+    </script>
+
+    <!-- back to top btn -->
+
+    <script>
+      window.onscroll = function () {
+        const btn = document.getElementById("backToTopBtn");
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+
+    <!-- aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
